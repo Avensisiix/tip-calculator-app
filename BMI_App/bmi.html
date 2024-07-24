@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            width: 50%;
+            margin: 5% auto;
+            background-color:azure;
+            padding: 20px;
+            
+        }
+        input{
+            width: 90%;
+            margin: 10px 0 5px 0;
+            padding: 15px;
+            border-radius: 10px;
+            outline: none;
+            border: 1px solid grey;
+
+        }
+        input[type= 'submit']{
+            width: 50%;
+            text-align: center;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type = 'submit']:hover{
+            background: white;
+            color: black;
+            border: 2px solid blue;
+
+        }
+        .weight_err, .height_err{
+            margin-top: -5px;
+            color: crimson;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="">Weight:</label>
+        <input class="weight" type="text" name="weight">
+        <p class="weight_err"></p>
+        <label for="">Height</label>
+        <input class="height" type="text" name="Height">
+        <p class="height_err"></p>
+
+        <input type="submit" class="submit" value="Calculate BMI">
+
+        <h1>Your BMI is:<span class="result"></span></h1>
+    </div>
+   
+    <script src="app.js"></script>
+</body>
+</html>
